@@ -1,0 +1,126 @@
+@font-face {
+   src: url('Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf');
+   font-family:redHat-variable;
+}
+@font-face {
+    src: url('Red_Hat_Display/static/RedHatDisplay-ExtraBold.ttf');
+    font-family:redHat-extrabold;
+ }
+
+body{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    min-height: 100svh;
+    background-color:hsl(225, 100%, 94%);
+    background-image: url('images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: redHat-variable,sans-serif;
+}
+.card{
+    max-width: 28.1rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius:1rem 1rem 1rem 1rem;
+}
+.card p{
+    font-size: 1rem;
+    margin: 0rem 3rem 1rem 3rem;
+    color: hsl(224, 23%, 55%);
+}
+.card h1{
+    color: hsl(223, 47%, 23%);
+    font-family:redHat-extrabold;
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+.card img{
+    display: block;
+    max-width: 100%;
+    border-radius:1rem 1rem 0rem 0rem;
+}
+.plan{
+    max-width: 20rem;
+    display: flex;
+    padding: 1rem;
+    margin: 1rem 3rem 1rem 2.8rem;
+    background-color:hsl(225, 100%, 98%);
+    border-radius: 1rem;
+}
+.plan a{
+    margin:0.8rem 0rem 0rem 5rem;
+    color: hsl(245, 75%, 52%);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+.price span:first-child{
+    color: hsl(223, 47%, 23%);
+    font-weight:bold;
+}
+.price:nth-child(2){
+    color: hsl(224, 23%, 55%);
+}
+button{
+    width: 78%;
+    padding:0.8rem;
+    font-weight: 700;
+    background-color:hsl(245, 75%, 52%);
+    color: hsl(0, 0%, 100%);
+    border:none;
+    border-radius: 0.5rem;
+    margin:0.8rem 0.2rem 1rem 0rem;
+}
+
+#order{
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    
+}
+
+#order:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+a:hover{
+    color:hsl(250, 70%, 60%);
+    text-decoration: none;
+}
+button:hover{
+    background-color:hsl(250, 70%, 60%);
+    cursor: pointer;
+}
+
+@media (min-width:320px) and (max-width:430px) {
+    body{
+        background-image: url('images/pattern-background-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .card{
+        width:19rem;
+        margin-left: 0.5rem;
+    }
+    .card p{
+        margin: 0rem 2.19rem 1rem 2.1rem;
+    }
+    .plan{
+        width:14rem;
+        margin-left:2rem;
+      
+    }
+    .plan img{
+        margin-right: 0.48rem;
+    }
+    .plan a{
+        margin:1rem 0rem 0rem 2rem;
+    }
+  
+    button{
+        margin-left: 1rem;
+        width: 85%;
+    }
+   
+}
